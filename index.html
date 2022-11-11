@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        h1{
+            text-align: center;
+        }
+        img{
+            width: 150px;
+            position: relative;
+             margin: 2% 44%;
+            
+        }
+        nav{
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        #azul{
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            background-color: #3939ff;
+        }
+        #amarelo{
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            background-color: #f2ff39;
+           
+        }
+        #verde{
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            background-color: #39ff74;
+            
+        }
+
+    </style>
+</head>
+<body id="corpo">
+     <h1 id="texto">ESCOLHA UMA COR</h1>
+    <nav>
+       
+        <button id="azul"></button>
+        <button id="amarelo"></button>
+        <button id="verde"></button>
+          <!--   <input type="color" name="" id="cor">-->
+    </nav> 
+    <img src="br.jpg" alt="">
+<script>
+    const azul=document.getElementById("azul");
+    const amarelo=document.getElementById("amarelo");
+    const verde=document.getElementById("verde");
+    const corpo=document.getElementById("corpo");
+    const h1=document.getElementById('texto')
+
+    azul.addEventListener("click",()=>{
+        corpo.style.backgroundColor='blue';
+        h1.style.color='#b2b9f3';
+    });
+    
+    amarelo.addEventListener("click",()=>{
+        corpo.style.backgroundColor='yellow';
+        h1.style.color='#9c9205';
+    });
+
+    verde.addEventListener("click",()=>{
+        corpo.style.backgroundColor='green';
+        h1.style.color='#b2f3b2';
+    });
+
+
+    
+</script>
+</body>
+
+</html>
